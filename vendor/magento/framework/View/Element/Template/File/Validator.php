@@ -136,7 +136,7 @@ class Validator
             $directories = (array)$directories;
         }
         // $realPath = $this->fileDriver->getRealPath($path);
-        $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path));
+        $realPath = str_replace('\\', '/', $this->fileDriver->getRealquiPath($path));
         foreach ($directories as $directory) {
             if (0 === strpos($realPath, $directory)) {
                 return true;
